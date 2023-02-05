@@ -1,0 +1,319 @@
+.menu-Principal {
+    background-repeat: no-repeat;
+    background-color: #222222;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.menu-body {
+    background: url("../img/FONDO.jpg");
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    flex-flow: column;
+    li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: rgb(197, 152, 63);
+        color: white;
+    }
+}
+
+.menu-header-image {
+    background: url("./../img/SushiOkaohLogo.jpg");
+    height: 190px;
+    width: 190px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.menu-container {
+    flex: 1;
+}
+
+.menu-titulo {
+    font-size: 48px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-descripcion {
+    font-size: 30px;
+    color: white;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu-botones {
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.menu-botonera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menu-redes {
+    color: white;
+    font-size: 30px;
+    height: 68px;
+    margin: 0 60px;
+}
+
+.menu-menu-nav {
+    width: 15%;
+    display: flex;
+}
+
+.menu-bodyflex {
+    display: flex;
+    flex-flow: row;
+}
+
+.menu-content {
+    width: 85%;
+    display: flex;
+}
+
+.menu-nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+
+
+
+.menu-navegacion {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    border-radius: 18px;
+    padding: 10px 0;
+    text-align: center;
+    background: black;
+    transform: translate(0, -50%);
+    color: white;
+    box-shadow: 0 0 20px 2px #00000085;
+}
+
+.menu-navegacion-li {
+    padding: 20px 0;
+}
+
+.menu-seleccionado {
+    background-color: rgb(197, 152, 63);
+    color: white;
+}
+
+.menu-iconpp {
+    padding: 50px 20px;
+    color: bisque;
+}
+
+.menu-contenidoppal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.menu-contenidoizq {
+    width: 280px;
+    height: 100%;
+}
+
+.menu-contenidoder {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.menu-cd-titulo {
+    padding: 20px 0;
+    padding-left: 50px;
+}
+
+.menu-cd-cuerpo {
+    flex: 1;
+}
+
+.menu-cd-botonera {
+    text-align: center;
+}
+
+.menu-cd-footer {}
+
+.menu-boton-mas {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: black;
+}
+
+.menu-titulo-span {
+    border-bottom: 2px solid #ffd27a;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menu-size-img {
+    height: 250px;
+    width: 180px;
+}
+
+.menu-flex-img {
+    display: flex;
+    padding: 30px 0;
+}
+
+.menu-order-cont {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bold-p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-cd-cuerpo-2 {
+    display: flex;
+    flex: 1;
+}
+
+.menu-mapa {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+
+.menu-contenedor2 {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+}
+
+.menu-logo {
+    padding: 40px 120px;
+    background: orange;
+}
+
+.menu-direccion {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.menu-mapa-img {
+    padding: 20px;
+    background: orange;
+}
+.menu-formulario {
+    flex: 1;
+
+}
+.menu-cd-cuerpo-3 {
+    display: flex;
+    flex: 1;
+}
+.menu-size-img-2 {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.menu-size-platos {
+    font-size: 28px;
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+}
+
+.menu-pedidos {
+background: orange;
+flex: 1;    
+margin: 50px;
+}
+
+.menu-compra {
+display: flex;
+flex: 1;
+flex-direction: column;
+}
+
+.menu-resultado {
+background: orange;
+margin: 50px;
+flex: 1;
+/* display: flex; */
+}
+
+.menu-descuento {
+    margin: 50px;
+border: 1px solid orange;
+flex: 1;
+/* display: flex; */
+}
+
+.menu-pedido-individual{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-size-img-3{
+    padding: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.menu-cant {
+    width: 30px;
+}
+
+.menu-ajuste {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

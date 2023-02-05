@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <link
+      rel="shortcut icon"
+      href="./img/SushiOkaohLogo.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="menu-body menu-bodyflex">
+    <!-- MENU navegacion -->
+    <ul class="menu-navegacion">
+      <li>
+        <div class="menu-iconpp">
+          <i class="fa fa-scribd" style="font-size: 48px"></i>
+        </div>
+      </li>
+      <li class="menu-navegacion-li">
+        <a href="./mi-cuenta.html"
+          ><i class="fa fa-home" style="font-size: 48px" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li class="navegacion-li">
+        <a href="./menu.html">
+          <i class="fa fa-cutlery" style="font-size: 48px"></i>
+        </a>
+      </li>
+      <li class="menu-navegacion-li">
+        <a href="./pedidos.html" class="seleccionado"
+          ><i class="fa fa-cart-arrow-down" style="font-size: 48px"></i>
+        </a>
+      </li>
+      <li class="menu-navegacion-li">
+        <a href="./mapa.html"
+          ><i class="fa fa-map-marker" style="font-size: 48px"></i
+        ></a>
+      </li>
+      <li class="menu-navegacion-li">
+        <a href="../index.html"
+          ><i class="fa fa-sign-out" style="font-size: 48px"></i
+        ></a>
+      </li>
+    </ul>
+
+    <!-- CONTENIDO -->
+    <div class="menu-contenidoppal">
+      <div class="menu-contenidoizq"></div>
+      <div class="menu-contenidoder">
+        <!-- TITULO -->
+        <div class="menu-cd-titulo">
+          <span class="menu-titulo-span">Pedidos</span>
+        </div>
+
+        <div class="menu-cd-cuerpo-3">
+          <!-- PEDIDO -->
+          <div class="pedidos">
+
+            <div class="menu-pedido-individual">
+              <img class="menu-size-img-3" src="../img/7.jpg" alt="" />
+              <div style="flex: 1">
+                <div>Rolls de Autor</div>
+                <div>$2500</div>
+              </div>
+              <div class="menu-ajuste">
+                <input class="menu-cant" value="1" type="number" />
+              </div>
+              <div class="menu-ajuste">
+                <button>X</button>
+              </div>
+            </div>
+
+            <div class="menu-pedido-individual">
+              <img class="menu-size-img-3" src="../img/3.jpg" alt="" />
+              <div style="flex: 1">
+                <div>Yin & Yang</div>
+                <div>$3500</div>
+              </div>
+              <div class="menu-ajuste">
+                <input class="menu-cant" value="1" type="number" />
+              </div>
+              <div class="menu-ajuste">
+                <button>X</button>
+              </div>
+            </div>
+
+            <div class="menu-pedido-individual">
+              <img class="menu-size-img-3" src="../img/8.jpg" alt="" />
+              <div style="flex: 1">
+                <div>Risotto de Salmón y Mariscos</div>
+                <div>$1850</div>
+              </div>
+              <div class="menu-ajuste">
+                <input class="cant" value="1" type="number" />
+              </div>
+              <div class="menu-ajuste">
+                <button>X</button>
+              </div>
+            </div>
+
+            <div class="menu-pedido-individual">
+              <img class="menu-size-img-3" src="../img/4.jpg" alt="" />
+              <div style="flex: 1">
+                <div>Ramen</div>
+                <div>$2250</div>
+              </div>
+              <div class="menu-ajuste">
+                <input class="cant" value="1" type="number" />
+              </div>
+              <div class="menu-ajuste">
+                <button>X</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- COMPRAS -->
+          <div class="menu-compra">
+            <div class="menu-resultado">
+              <div style="padding: 50px;">
+                <h1>Tu Subtotal</h1>
+                <h3>Subtotal $10100</h3>
+                <button>Confirmar Orden</button>
+              </div>
+            </div>
+            <div class="menu-descuento">
+              <div style="padding: 50px;">
+                <h1>Código de Descuento</h1>
+                <input placeholder="Codigo" type="text" />
+                <button>Aplicar</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="menu-cd-footer">
+          <h5>Copyright © 2022 Sushi Okaoh</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

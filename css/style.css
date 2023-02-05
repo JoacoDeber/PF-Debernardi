@@ -1,0 +1,494 @@
+body {
+  margin: 0 !important;
+  color: white !important; }
+
+/* GRID */
+/* ---------------------------------------------------------------------------------------------------------- */
+.mapa-grid {
+  display: grid;
+  grid-template-areas: 'snapbar contenido ';
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(50px, 70px) 1fr;
+  gap: 20px;
+  padding: 10px;
+  height: 100vh;
+  background: url("../img/FONDO.jpg");
+  background-size: 100% 100%; }
+
+.mapa-snapbar {
+  grid-area: snapbar;
+  display: grid;
+  grid-template-areas: 'navegacion ';
+  grid-template-rows: 1fr; }
+
+.mapa-contenido {
+  grid-area: contenido;
+  display: grid;
+  grid-template-areas: 'contenido-titulo contenido-titulo ' 'contenido-mapa contenido-logo ' 'contenido-mapa contenido-direccion ' 'contenido-fin contenido-fin ';
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  gap: 20px;
+  height: 100vh; }
+
+.mapa-contenido-titulo {
+  grid-area: contenido-titulo;
+  display: flex;
+  align-items: center;
+  font-size: 4vw; }
+
+.mapa-contenido-mapa {
+  grid-area: contenido-mapa;
+  background: url("../img/mapa.JPG");
+  background-size: 100% 100%;
+  width: 100%;
+  border: 3px solid #ffa602;
+  border-radius: 4px; }
+
+.mapa-contenido-logo {
+  grid-area: contenido-logo; }
+
+.mapa-contenido-direccion {
+  grid-area: contenido-direccion;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
+
+.mapa-contenido-fin {
+  grid-area: contenido-fin; }
+
+/* CLASES */
+/* ---------------------------------------------------------------------------------------------------------- */
+.mapa-header-image {
+  background: url("./../img/SushiOkaohLogo.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  width: 100%;
+  aspect-ratio: auto 1/1; }
+
+.mapa-navegacion {
+  grid-area: navegacion;
+  border-radius: 18px;
+  padding: 10px 0;
+  text-align: center;
+  background: black;
+  color: white;
+  box-shadow: 0 0 20px 2px #00000085;
+  border: 1px solid white;
+  display: grid; }
+
+.mapa-navegacion-li {
+  /* padding: 20px 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.mapa-seleccionado {
+  background-color: white;
+  color: white; }
+
+.mapa-iconpp {
+  /* padding: 50px 20px; */
+  color: bisque; }
+
+ul {
+  list-style-type: none; }
+
+/* MEDiA */
+/* ---------------------------------------------------------------------------------------------------------- */
+@mapa-media only screen and (min-width: 601px) {}@mapa-media only screen and (max-width: 800px) {
+  .mapa-contenido {
+    grid-template-areas: 'contenido-titulo' 'contenido-direccion ' 'contenido-mapa ' 'contenido-fin';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr; }
+  .mapa-contenido-logo {
+    display: none; } }
+
+.menu-Principal {
+  background-repeat: no-repeat;
+  background-color: #222222;
+  background-size: cover;
+  font-family: sans-serif; }
+
+.menu-body {
+  background: url("../img/FONDO.jpg");
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  flex-flow: column; }
+  .menu-body li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none; }
+  .menu-body li a:hover {
+    background-color: #c5983f;
+    color: white; }
+
+.menu-header-image {
+  background: url("./../img/SushiOkaohLogo.jpg");
+  height: 190px;
+  width: 190px;
+  background-size: cover;
+  border-radius: 50%; }
+
+.menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0; }
+
+.menu-container {
+  flex: 1; }
+
+.menu-titulo {
+  font-size: 48px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu-descripcion {
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center; }
+
+.menu-botones {
+  width: 180px;
+  height: 45px;
+  font-size: 20px;
+  margin: 0 15px; }
+
+.menu-botonera {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu-footer {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.menu-redes {
+  color: white;
+  font-size: 30px;
+  height: 68px;
+  margin: 0 60px; }
+
+.menu-menu-nav {
+  width: 15%;
+  display: flex; }
+
+.menu-bodyflex {
+  display: flex;
+  flex-flow: row; }
+
+.menu-content {
+  width: 85%;
+  display: flex; }
+
+.menu-nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1; }
+
+.menu-navegacion {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  border-radius: 18px;
+  padding: 10px 0;
+  text-align: center;
+  background: black;
+  transform: translate(0, -50%);
+  color: white;
+  box-shadow: 0 0 20px 2px #00000085; }
+
+.menu-navegacion-li {
+  padding: 20px 0; }
+
+.menu-seleccionado {
+  background-color: #c5983f;
+  color: white; }
+
+.menu-iconpp {
+  padding: 50px 20px;
+  color: bisque; }
+
+.menu-contenidoppal {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+
+.menu-contenidoizq {
+  width: 280px;
+  height: 100%; }
+
+.menu-contenidoder {
+  flex: 1;
+  display: flex;
+  flex-flow: column; }
+
+.menu-cd-titulo {
+  padding: 20px 0;
+  padding-left: 50px; }
+
+.menu-cd-cuerpo {
+  flex: 1; }
+
+.menu-cd-botonera {
+  text-align: center; }
+
+.menu-boton-mas {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background: black; }
+
+.menu-titulo-span {
+  border-bottom: 2px solid #ffd27a;
+  font-size: 2em;
+  font-weight: bold; }
+
+.menu-size-img {
+  height: 250px;
+  width: 180px; }
+
+.menu-flex-img {
+  display: flex;
+  padding: 30px 0; }
+
+.menu-order-cont {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+
+.menu-bold-p {
+  font-size: 20px;
+  font-weight: bold; }
+
+.menu-cd-cuerpo-2 {
+  display: flex;
+  flex: 1; }
+
+.menu-mapa {
+  flex: 1;
+  margin: auto;
+  text-align: center; }
+
+.menu-contenedor2 {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto; }
+
+.menu-logo {
+  padding: 40px 120px;
+  background: orange; }
+
+.menu-direccion {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center; }
+
+.menu-mapa-img {
+  padding: 20px;
+  background: orange; }
+
+.menu-formulario {
+  flex: 1; }
+
+.menu-cd-cuerpo-3 {
+  display: flex;
+  flex: 1; }
+
+.menu-size-img-2 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%; }
+
+.menu-size-platos {
+  font-size: 28px;
+  flex: 1;
+  display: flex;
+  flex-flow: row; }
+
+.menu-pedidos {
+  background: orange;
+  flex: 1;
+  margin: 50px; }
+
+.menu-compra {
+  display: flex;
+  flex: 1;
+  flex-direction: column; }
+
+.menu-resultado {
+  background: orange;
+  margin: 50px;
+  flex: 1;
+  /* display: flex; */ }
+
+.menu-descuento {
+  margin: 50px;
+  border: 1px solid orange;
+  flex: 1;
+  /* display: flex; */ }
+
+.menu-pedido-individual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu-size-img-3 {
+  padding: 20px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%; }
+
+.menu-cant {
+  width: 30px; }
+
+.menu-ajuste {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+body {
+  margin: 0 !important;
+  color: white !important; }
+
+/* GRID */
+/* ---------------------------------------------------------------------------------------------------------- */
+.grid-p {
+  display: grid;
+  grid-template-areas: 'proximamente';
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding: 10px;
+  height: 100vh;
+  background: url("../img/FONDO.jpg");
+  background-size: 100% 100%; }
+
+.grid {
+  display: grid;
+  grid-template-areas: 'titulo titulo ' 'contenido  publicidad' 'fin fin ';
+  grid-template-rows: minmax(50px, 1fr) 6fr minmax(50px, 1fr);
+  grid-template-columns: 5fr minmax(150px, 200px);
+  gap: 5px;
+  padding: 10px;
+  height: 100vh;
+  background: url("../img/FONDO.jpg");
+  background-size: 100% 100%; }
+
+.titulo {
+  /* background: red; */
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.contenido {
+  /* background: blue; */
+  grid-area: contenido;
+  display: grid;
+  grid-template-areas: 'a contenido-titulo ' 'a contenido-descripcion ' 'a contenido-botonera ';
+  grid-template-rows: minmax(50px, 1fr) 4fr minmax(50px, 1fr);
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding: 10px; }
+
+.publicidad {
+  grid-area: publicidad;
+  background: url("../img/publicidad.jpg");
+  background-size: 100% 100%; }
+
+.publicidad-horizontal {
+  grid-area: publicidad;
+  background: url("../img/publicidad-horizontal.jpg");
+  background-size: 100% 100%; }
+
+.fin {
+  /* background: black; */
+  grid-area: fin;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.contenido-titulo {
+  grid-area: contenido-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 20px black; }
+
+.contenido-descripcion {
+  grid-area: contenido-descripcion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 20%; */
+  text-shadow: 0 0 20px black; }
+
+.contenido-botonera {
+  grid-area: contenido-botonera;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* CLASES */
+/* ---------------------------------------------------------------------------------------------------------- */
+.header-image {
+  background: url("./../img/SushiOkaohLogo.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  height: 100%;
+  aspect-ratio: auto 1/1; }
+
+.contenido-boton {
+  margin: 0 5px;
+  font-size: 2rem !important; }
+
+.contenido-boton a {
+  color: white !important; }
+
+.proximamente {
+  grid-area: proximamente;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: auto;
+  font-size: 7.5vw; }
+
+/* MEDiA */
+/* ---------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 601px) {
+  .publicidad-horizontal {
+    display: none; } }
+
+@media only screen and (max-width: 600px) {
+  .publicidad {
+    display: none; }
+  .grid {
+    grid-template-areas: 'titulo' 'publicidad' 'contenido' 'fin';
+    grid-template-rows: minmax(50px, 1fr) minmax(100px, 1fr) 5fr minmax(50px, 1fr);
+    grid-template-columns: 1fr; }
+  .contenido {
+    grid-template-columns: 1fr; } }
